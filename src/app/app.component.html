@@ -1,0 +1,18 @@
+<app-adding (emitToParent)="getFromChild($event)" ></app-adding>
+
+
+<div class="card text-center">
+  <br><br>
+  <div class="card-header">
+    <h2>Let us get some work done!</h2>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Let us make somthing great</h5>
+
+    <div class="input-group flex-nowrap" *ngFor="let task of tasks">
+
+      <app-list [task]="task" ></app-list>
+
+    </div>
+  </div>
+</div>

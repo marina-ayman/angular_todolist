@@ -1,0 +1,17 @@
+<div class="card text-center">
+  <div class="card-header">
+    <h1>TODO APP</h1>
+  </div>
+  <div class="card-body">
+    <!-- <form  > -->
+      <h5 class="card-title">Let us make somthing great</h5>
+      <div class="input-group flex-nowrap">
+        <input type="text" [(ngModel)]="task" (onKeyUp)="getTask(task)" class="form-control" placeholder="TASK TODO " aria-label="Username"
+          aria-describedby="addon-wrapping">
+      </div>
+      <br>
+      <button  (click)="send()" class="btn btn-primary">SEND ME >>>>>>>>>></button>
+    <!-- </form> -->
+  </div>
+  <div class="card-footer text-muted">------------------------------------------------</div>
+</div>
